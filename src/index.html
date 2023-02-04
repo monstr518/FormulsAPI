@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>7-Б</title>
+	<link rel="shortcut icon" href="src/icon.png" type="image/x-icon">
+    <link href="src/styles.css" rel="stylesheet">
+    <script src="src/jquery-1.10.2.min.js"></script>
+	<script src="src/valid.js"></script>
+    <script src="src/functions.js"></script>
+</head>
+<body>
+    <center>
+        <h1>Сайт для математиков седьмого класса.</h1>
+
+		<div id="id-head">
+		Формула поддерживает операции {+,-,*,/}, умалчивать которые нельзя, а также функцию возведения в степень "pow(x,2)" (в данном случае x в квадрате).
+		Имена переменных могут состоять из множества латинских букв и цифр, но на первом месте должна быть буква.
+		Пример имени: VarName. Имя 2n - недопустимо. Поддерживаютса круглые скобки.
+		Формат запросов вы можете легко понять по примерах.
+		</div>
+		
+		<div id="id-e-1" class="c-ex" >
+		<p>
+			Для формулы <b>a*b+100</b>
+			<br/>
+			вычислить значения 
+			<br/>
+			при указанных <b>a</b> и <b>b</b>.
+		</p>
+		<pre>
+	"a":[1,2,4,20]
+	"b":[5,8,1,10]</pre>
+		</div>
+
+
+		<div id="id-e-2" class="c-ex" >
+		<p>
+			Для формулы <b>pi*2</b>
+			<br/>
+			вычислить значения 
+			<br/>
+			при указанных <b>pi</b>.
+		</p>
+		<pre>"pi":[3.1,3.14,3.1415]</pre>
+		</div>
+
+
+
+		<div id="id-e-3" class="c-ex" >
+		<p>
+			Для <b>x в степени 0.5</b>
+			<br/>
+			вычислить значения 
+			<br/>
+			для множества <b>x</b>.
+		</p>
+		<pre>"x":[100,25,9,4,1.327]</pre>
+		</div>
+
+		<br/>
+
+
+		<div id="id-e-10" class="c-ex" >
+		<p>
+			Упростить указанное выражение.
+		</p>
+		<pre>-1-(c*2)-10+c*nn-3*nn+(c-nn)*2+35</pre>
+		</div>
+
+
+		<div id="id-e-11" class="c-ex" >
+		<p>
+			Упростить указанное выражение.
+		</p>
+		<pre>((a+b+100)/(b+a))*(11/a)</pre>
+		</div>
+		
+
+
+
+		<div id="id-e-12" class="c-ex" >
+		<p>
+			Упростить выражение:
+		</p>
+		<pre>pow(a,2)*pow(a,3)+5</pre>
+		</div>
+
+		<br/>
+
+
+
+		<div id="id-e-20" class="c-ex" >
+		<p>
+			Вывести значение <b>а</b> из уравнения:
+		</p>
+		<pre>5*a*a-7*a-16 = 0</pre>
+		</div>
+
+
+
+		<div id="id-e-21" class="c-ex" >
+		<p>
+			Вывести неизвестные <b>а</b> и <b>n</b> из уравнения:
+		</p>
+		<pre>a*a+2*a-300 = n+x+100*(n-x)</pre>
+		</div>
+
+		<br/>
+
+
+		<div id="id-e-30" class="c-ex" >
+		<p>
+			Выяснить равны ли формулы:
+		</p>
+		<pre>n+1+x == (1+n*1)+(x-0)</pre>
+		</div>
+
+		<br/>
+		<br/>
+		
+		<div id="id-pair">
+			<textarea id="id-vopros" ></textarea>
+			<div id="id-otvet" ></div>
+		</div>
+		<br/>
+		<div id="id-key-send" >
+			Отправить на подумать.
+		</div>
+		<br/>
+		<span>(C) OFF 2023</span>
+		<span class="c-tab"></span>
+		<span>monstr518@ukr.net</span>
+		<span class="c-tab"></span>
+		<span><a id="id-link" href="http://monstr.domivo4ka.com">?</a></span>
+    </center>
+	<div id="id-container">
+<pre id="id-d1" >{
+	"formula": "a*b+100",
+	"from": {
+		"a":[1,2,4,20],
+		"b":[5,8,1,10]
+		}
+}</pre>
+	</div>
+</body>
+</html>
